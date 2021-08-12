@@ -26,10 +26,6 @@
   "bin": {
     "wifi": "bin/wifi.js"
   },
-  "main": "src/wifi.js",
-  "directories": {
-    "test": "test"
-  },
   "type": "module",
   "engines": {
     "node": ">=14.0.0"
