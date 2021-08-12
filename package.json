@@ -1,11 +1,12 @@
 {
   "name": "node-wifi-cli",
   "version": "2.0.15",
-  "description": "NodeJS tool to manage wifi",
+  "description": "A command line interface to manage wifi",
   "keywords": [
     "wifi",
     "multiplatform",
-    "node"
+    "node",
+    "cli"
   ],
   "author": "Thibault Friedrich",
   "contributors": [
@@ -14,10 +15,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/friedrith/node-wifi.git"
+    "url": "git://github.com/friedrith/node-wifi-cli.git"
   },
   "bugs": {
-    "url": "https://github.com/friedrith/node-wifi/issues"
+    "url": "https://github.com/friedrith/node-wifi-cli/issues"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
@@ -29,9 +30,9 @@
   "directories": {
     "test": "test"
   },
-  "type": "commonjs",
+  "type": "module",
   "engines": {
-    "node": ">=10.0.0"
+    "node": ">=14.0.0"
   },
   "dependencies": {
     "command-line-args": "^5.2.0",

@@ -3,13 +3,15 @@
 
 'use strict'
 
-const commandLineArgs = require('command-line-args')
-const getUsage = require('command-line-usage')
-const wifi = require('node-wifi')
+import commandLineArgs from 'command-line-args'
+import getUsage from 'command-line-usage'
+import wifi from 'node-wifi'
 
-const packageJson = require('../package.json')
+import { createRequire } from 'module' // Bring in the ability to create the 'require' method
+const require = createRequire(import.meta.url) // construct the require method
+const { version } = require('../package.json') // use the require method
 
-const { sections, optionDefinitions } = require('./help')
+import { sections, optionDefinitions } from './help.js'
 
 const usage = getUsage(sections)
 
@@ -23,7 +25,7 @@ try {
 }
 
 if (options.version) {
-  console.log(`Version ${packageJson.version}`)
+  console.log(`Version ${version}`)
   process.exit(0)
 }
 

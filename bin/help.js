@@ -1,4 +1,4 @@
-const optionDefinitions = [
+export const optionDefinitions = [
   {
     name: 'scan',
     type: Boolean,
@@ -61,7 +61,7 @@ const optionDefinitions = [
   },
 ]
 
-const sections = [
+export const sections = [
   {
     header: 'Wifi',
     content: 'Multi-OS tool to manage wifi.',
@@ -71,8 +71,3 @@ const sections = [
     optionList: optionDefinitions,
   },
 ]
-
-module.exports = {
-  sections,
-  optionDefinitions,
-}
