@@ -6,14 +6,23 @@ This library is a wrapper around [node-wifi](https://github.com/friedrith/node-w
 ## Getting started
 
 ```bash
-npx node-wifi-cli --scan 
+npm install node-wifi-cli -g
 
-npx node-wifi-cli --connect --ssid <ssid> --password <password> [--iface <wlan0>] 
+node-wifi-cli --scan 
 
-npx node-wifi-cli --disconnect
+node-wifi-cli --connect --ssid <ssid> --password <password> [--iface <wlan0>] 
 
-npx node-wifi-cli --current 
+node-wifi-cli --disconnect
+
+node-wifi-cli --current 
+
+# You can also use npx 
+
+npx node-wifi-cli --scan
+
+
 ```
+
 
 ## Contribute
 
